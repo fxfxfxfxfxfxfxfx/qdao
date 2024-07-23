@@ -142,8 +142,6 @@ class Engine:
     #    print(sv_res)
     #    assert sv.equiv(sv_res)
 
-    # TODO
-    # 更改使其可以从现有的sv创建子线路
     @time_it
     def _initialize(self):
         """
@@ -151,10 +149,6 @@ class Engine:
         """
         self._manager.initialize()
 
-    # TODO
-    # 将qdao中的circ统一成qdao circ
-    # 1.在dis-qdao创建时，将其改成qdao-circ
-    # 2.子线路划分中使用的子线路改成qdao circ
     def run(self):
         """Run simulation
         1. Partition the circuit into sub-circuits
